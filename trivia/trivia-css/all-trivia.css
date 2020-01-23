@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: green;
+}
+li {
+  list-style: none;
+}
+
+/* ヘッダー部分 */
+header {
+  height: 150px;
+  width: 100%;
+  background-color: green;
+  top: 0;
+}
+header a {
+  float: left;
+}
+header a:hover {
+  opacity: 0.8;
+}
+header p {
+  margin-top: 20px;
+  margin-left: 95px;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  color: green;
+}
+header h1 {
+  float: left;
+  margin-top: 68px;
+  margin-left: 190px;
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+}
+header h2 {
+  margin-top: 68px;
+  margin-left: 40px;
+  font-size: 25px;
+  color: red;
+}
+header img {
+  margin: 45px 30px 0 70px;
+  width: 100px;
+  position: fixed;
+  z-index: 10;
+}
+
+/* メインコンテンツ部分 */
+.trivia-contents {
+  width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.trivia-contents img {
+  border-radius: 10px;
+}
+.trivia-contents h1 {
+  margin-top: 100px;
+  margin-left: 0px;
+  color: green;
+}
+
+/* もくじ部分 */
+.link-contents {
+  text-align: left;
+  width: 750px;
+  margin-left: 375px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+  background-color: #f5ecc1;
+}
+.link-contents h1 {
+  margin-left: 220px;
+  padding-top: 20px;
+}
+.link-contents a{
+  margin-left: 220px;
+  font-size: 20px;
+}
+.link-contents a:hover {
+  opacity: 0.8;
+  color: red;
+}
+
+/* もくじへ進むボタン部分 */
+.back-button {
+  top: 10px;
+  margin-left: 1300px;
+  font-size: 30px;
+  position: fixed;
+  z-index: 15;
+}
+.back-button a:hover {
+  color: red;
+}
+
+/* 最上位のコンテンツ部分の間隔 */
+#link-1 {
+  margin-top: 80px;
+}
+
+/* フッター部分 */
+.container {
+  text-align: center;
+}
+footer {
+  margin-top: 100px;
+  height: 180px;
+  background-color: green;
+}
+footer img {
+  width: 100px;
+  margin-top: 30px;
+}
+footer p {
+  color: white;
+}
+
+/* タブレット用設定部分 */
+@media(max-width: 1170px) {
+
+  /* タブレット・ヘッダー部分 */
+  .header-contents {
+    width: 760px;
+    margin: 0 auto;
+    float: none;
+  }
+  header {
+    height: 200px;
+  }
+  header h1 {
+    margin-top: -35px;
+    margin-left: 250px;
+    font-size: 40px;
+  }
+  header img {
+    position: static;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 300px;
+  }
+  header p {
+    position: static;
+  }
+  .top-link {
+    display: none;
+  }
+
+  /* タブレット・メインコンテンツ部分 */
+  .trivia-contents {
+    width: 760px;
+    margin: 0 auto;
+  }
+  .trivia-contents h1 {
+    margin-top: 50px;
+    margin-left: 45px;
+  }
+  .trivia-contents img {
+    width: 750px;
+  }
+
+  /* タブレット・もくじ部分 */
+  .link-contents {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .link-contents a {
+    margin-left: 0;
+    font-size: 40px;
+  }
+  .link-contents h1 {
+    margin-left: 0px;
+    font-size: 50px;
+  }
+  .link-contents li {
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+
+  /* タブレット・もくじへ進むボタン部分 */
+  .back-button {
+    display: none;
+  }
+
+  /* タブレット・フッター部分 */
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 200px;
+    width: 100%;
+    margin-top: 100px;
+  }
+  footer img {
+    width: 150px;
+    margin-left: 0;
+  }
+  footer p {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+}
+
+/* スマートフォン用設定部分 */
+@media(max-width: 670px) {
+  /* スマートフォン・ヘッダー部分 */
+  .header-contents {
+    width: 300px;
+    margin: 0 auto;
+    float: none;
+  }
+  header {
+    height: 120px;
+  }
+  header h1 {
+    margin-top: -40px;
+    margin-left: 85px;
+    font-size: 20px;
+  }
+  header img {
+    position: static;
+    width: 100px;
+    margin-top: 12px;
+    margin-left: 100px;
+  }
+  header p {
+    position: static;
+  }
+  .top-link {
+    display: none;
+  }
+
+  /* スマートフォン・メインコンテンツ部分 */
+  .trivia-contents {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .trivia-contents h1 {
+    margin-top: 20px;
+    margin-left: 5px;
+    font-size: 15px;
+  }
+  .trivia-contents img {
+    width: 300px;
+  }
+
+  /* スマートフォン・もくじ部分 */
+  .link-contents {
+    text-align: center;
+    width: 300px;
+    margin-left: 0px;
+  }
+  .link-contents a {
+    margin-left: 0;
+    font-size: 18px;
+  }
+  .link-contents h1 {
+    margin-left: 0px;
+    font-size: 20px;
+  }
+  .link-contents li {
+    margin-top: 20px;
+    margin-right: 40px;
+  }
+
+  /* スマートフォン・もくじへ進むボタン部分 */
+  .back-button {
+    display: none;
+  }
+
+  /* スマートフォン・フッター部分 */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 50px;
+    height: 140px;
+  }
+  footer img {
+    width: 100px;
+  }
+  footer p {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
