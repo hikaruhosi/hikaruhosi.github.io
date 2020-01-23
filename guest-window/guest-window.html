@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charaset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1">
+    <title>ベジドット公式サイト┃お客様窓口</title>
+    <link rel="stylesheet" href="./guest-window-css/guest-window.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap');
+    </style>
+  </head>
+
+  <body>
+
+    <!-- ヘッダー部分 -->
+    <header>
+      <div class="header-contents">
+        <a href="#">
+          <img src="../photo/vegedot.png" class="header-logo" alt="企業のイメージロゴです">
+          <p class="back-btn">↑戻る</p>
+        </a>
+        <h1>お客様窓口</h1>
+        <div class="top-link">
+          <a href="../home-page.html">
+            <h2>HOME</h2>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- タイトル部分 -->
+    <div class="guest-window-text">
+      <h1>いつもベジドットをご利用いただき誠にありがとうございます。</h1>
+      <p>皆様からのご意見ご要望をいつでもお待ちしております。</p>
+      <p>どんな些細なことでも構いませんので下記の入力フォームに記入し送信していただけると幸いです。</p>
+    </div>
+
+    <!-- お問い合わせフォーム部分 -->
+    <div class="form-container">
+  　  <form action="confirm.php" method="post">
+        <h2>お問い合わせの種類</h2><br></br>
+          <div class="grocery-contents">
+            <h3>商品について</h3>
+              <input id="imo" type="radio" name="vegetable" value="イモ類"><label for="imo">イモ類　</label>
+              <input id="kinoko" type="radio" name="vegetable" value="キノコ類"><label for="kinoko">キノコ類　</label><br></br>
+              <input id="konsai" type="radio" name="vegetable" value="根菜類"><label for="konsai">根菜類　</label>
+              <input id="yousai" type="radio" name="vegetable" value="葉菜類"><label for="yousai">葉菜類　</label><br></br>
+              <input id="kasai" type="radio" name="vegetable" value="果菜類"><label for="kasai">果菜類　</label>
+              <input id="kudamono" type="radio" name="vegetable" value="果物"><label for="kudamono">果物　</label><br></br>
+              <input id="sonota" type="radio" name="sonota" value="その他"><label for="sonota">その他　</label>
+            </div>
+
+          <div class="vegedot-contents">
+            <h3>ベジドットについて</h3>
+            <input id="grocery" type="radio" name="contents" value="商品情報"><label for="grocery">商品情報</label><br></br>
+            <input id="campaign" type="radio" name="contents" value="キャンペーン"><label for="campaign">キャンペーン</label><br></br>
+            <input id="vegedot" type="radio" name="contents" value="ベジドットって？"><label for="vegedot">ベジドットって？</label><br></br>
+            <input id="trivia" type="radio" name="contents" value="知っトク！"><label for="trivia">知っトク！</label><br></br>
+            <input id="guestwindow" type="radio" name="contents" value="お客様窓口"><label for="guestwindow">お客様窓口</label><br></br>
+            <input id="sonota" type="radio" name="sonota" value="その他"><label for="sonota">その他</label>
+          </div><br></br>
+
+          <div class="name-contents">
+            <label for="name"><h3>お名前（漢字）</h3>　姓 　 <input class="name-input" type="text" name="yourname" placeholder="山田"> <br></br>　名 　 <input class="name-input" type="text" name="yourname" placeholder="太郎"></label><br></br>　
+          </div>
+
+          <div class="name-contents2">
+            <label for="name"><h3>お名前（カナ）</h3>　セイ　<input class="name-input" type="text" name="yourname" placeholder="ヤマダ"> <br></br>　メイ　<input class="name-input" type="text" name="yourname" placeholder="タロウ"></label>
+          </div><br></br>
+
+          <div class="age-contents">
+            <label for="age"><h3>年代</h3></label>
+            <select name="age">
+              <option value="セレクト">ここから選択できます</option>
+              <option value="10">10代未満</option>
+  　          <option value="10">10代</option>
+  　          <option value="20">20代</option>
+  　          <option value="30">30代</option>
+  　          <option value="40">40代</option>
+  　          <option value="50">50代</option>
+  　          <option value="60">60代</option>
+  　          <option value="70">70代</option>
+  　          <option value="80">80代</option>
+  　          <option value="80">80代以上</option>
+　          </select>
+          </div><br></br>
+
+          <div class="tell-contents">
+            <label for="tell"><h3>電話番号</h3></label>
+            <input class="tel-input" type="text" name="tel" placeholder="090">-<input class="tel-input" type="text" name="tel" placeholder="1111">-<input class="tel-input" type="text" name="tel" placeholder="2222"><br></br>
+          </div><br></br>
+
+          <div class="mail-contents">
+            <label for="mail"><h3>メール</h3></label>
+            <input id="mail" type="email" name="mail" placeholder="例：yamada1212@.ne.jp"><br></br>
+          </div><br></br>
+
+          <div class="city-contents">
+            <label for="city"><h3>都道府県</h3></label>
+            <select name="city">
+              <option value="セレクト">ここから選択できます</option>
+              <option value="1">北海道</option>
+              <option value="2">青森県</option>
+              <option value="3">岩手県</option>
+              <option value="4">宮城県</option>
+              <option value="5">秋田県</option>
+              <option value="6">山形県</option>
+              <option value="7">福島県</option>
+              <option value="8">茨城県</option>
+              <option value="9">栃木県</option>
+              <option value="10">群馬県</option>
+              <option value="11">埼玉県</option>
+              <option value="12">千葉県</option>
+              <option value="13">東京都</option>
+              <option value="14">神奈川県</option>
+              <option value="15">新潟県</option>
+              <option value="16">富山県</option>
+              <option value="17">石川県</option>
+              <option value="18">福井県</option>
+              <option value="19">山梨県</option>
+              <option value="20">長野県</option>
+              <option value="21">岐阜県</option>
+              <option value="22">静岡県</option>
+              <option value="23">愛知県</option>
+              <option value="24">三重県</option>
+              <option value="25">滋賀県</option>
+              <option value="26">京都府</option>
+              <option value="27">大阪府</option>
+              <option value="28">兵庫県</option>
+              <option value="29">奈良県</option>
+              <option value="30">和歌山県</option>
+              <option value="31">鳥取県</option>
+              <option value="32">島根県</option>
+              <option value="33">岡山県</option>
+              <option value="34">広島県</option>
+              <option value="35">山口県</option>
+              <option value="36">徳島県</option>
+              <option value="37">香川県</option>
+              <option value="38">愛媛県</option>
+              <option value="39">高知県</option>
+              <option value="40">福岡県</option>
+              <option value="41">佐賀県</option>
+              <option value="42">長崎県</option>
+              <option value="43">熊本県</option>
+              <option value="44">大分県</option>
+              <option value="45">宮崎県</option>
+              <option value="46">鹿児島県</option>
+              <option value="47">沖縄県</option>
+              <option value="48">海外在住</option>
+　　　　 　  </select><br></br>
+          </div>
+
+          <div class="comment-contents">
+            <label for="comment"><h3>お問い合わせ本文</h3></label>
+            <textarea id="comment" name="comment" placeholder="ここにご意見、ご要望をお書きください"></textarea>
+          </div><br></br>
+      </form>
+    </div>
+
+    <!-- 送信ボタン -->
+    <div class="send-button">
+      <a href="./guest-window-send.html">
+        <div class="send-contents">
+          <img src="../photo/send-button.png" class="button-size">
+        </div>
+      </a>
+    </div>
+
+    <!-- フッター部分 -->
+    <footer>
+      <div class="container">
+        <a href="../home-page.html">
+          <img src="../photo/vegedot.png">
+        </a>
+      </div>
+      <p>2019.vegedot</p>
+    </footer>
+
+  </body>
+
+</html>
