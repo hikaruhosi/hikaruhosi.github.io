@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: green;
+}
+span {
+  color: red;
+}
+
+/* ヘッダー部分 */
+header {
+  height: 150px;
+  width: 100%;
+  background-color: #433a75;
+  top: 0;
+}
+header a {
+  float: left;
+}
+header a:hover {
+  opacity: 0.8;
+}
+header p {
+  margin-top: 20px;
+  margin-left: 85px;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  color: #433a75;
+}
+header h1 {
+  float: left;
+  margin-top: 68px;
+  margin-left: 190px;
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+}
+header h2 {
+  margin-top: 68px;
+  margin-left: 40px;
+  font-size: 25px;
+  color: red;
+}
+header img {
+  margin: 45px 30px 0 70px;
+  width: 100px;
+  position: fixed;
+  z-index: 10;
+}
+
+/* キャンペーンコンテンツ部分 */
+.campaign {
+  width: 1000px;
+  margin: 0 auto;
+}
+.campaign-size {
+  width: 1000px;
+  margin-top: 80px;
+  border-radius: 10px;
+}
+.campaign-text {
+  padding-left: 30px;
+  padding-right: 20px;
+  background-color: #433a75;
+  border-radius: 5px;
+}
+.campaign-text h2,p {
+  display: inline-block;
+  font-size: 20px;
+  color: #fdf58f;
+}
+
+/* 商品情報部分 */
+.grocery {
+  width: 1000px;
+  margin: 0 auto;
+}
+.grocery img {
+  margin-top: 2px;
+  border-radius: 10px;
+}
+
+/* 購入ボタン部分 */
+.buy-button {
+  width: 1000px;
+  margin-top: -60px;
+  margin-left: 450px;
+}
+.buy-button a:hover {
+  opacity: 0.8;
+}
+.button-size {
+  width: 300px;
+  margin-left: 350px;
+}
+
+/* フッター部分 */
+footer {
+  margin-top: 50px;
+  height: 180px;
+  background-color: #433a75;
+}
+footer img {
+  width: 100px;
+  margin-top: 30px;
+  margin-left: 900px;
+}
+footer p {
+  margin-left: 895px;
+  color: white;
+}
+
+/* タブレット用設定部分 */
+@media(max-width: 1170px) {
+  .header-contents {
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  /* タブレット・ヘッダー部分 */
+  header {
+    height: 200px;
+  }
+  header p {
+    display: none;
+  }
+  header h1 {
+    margin: 140px 0 0 -210px;
+    font-size: 30px;
+  }
+  header h2 {
+    display: none;
+  }
+  header img {
+    position: static;
+    float: none;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 300px;
+  }
+
+  /* タブレット・キャンペーンコンテンツ部分 */
+  .campaign {
+    width: 750px;
+    margin: 0 auto;
+  }
+  .campaign img {
+    width: 750px;
+    margin-top: 50px;
+  }
+  .campaign-text h2 {
+    font-size: 25px;
+  }
+  .campaign-text p {
+    font-size: 25px;
+  }
+
+  /* タブレット・商品情報部分 */
+  .grocery {
+    width: 750px;
+    margin: 0 auto;
+  }
+  .grocery img {
+    width: 750px;
+  }
+
+  /* タブレット・購入ボタン部分 */
+  .buy-button {
+    width: 750px;
+    margin: 0 auto;
+  }
+  .button-size {
+    margin: 0 0 0 225px;
+  }
+
+  /* タブレット・フッター部分 */
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 0;
+    height: 200px;
+  }
+  footer img {
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 300px;
+  }
+  footer p {
+    margin-top: 10px;
+    margin-left: 300px;
+    font-size: 25px;
+  }
+}
+
+/* スマートフォン用設定部分 */
+@media(max-width: 670px) {
+  .header-contents {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  /* スマートフォン・ヘッダー部分 */
+  header {
+    height: 120px;
+  }
+  header p {
+    display: none;
+  }
+  header h1 {
+    margin: 10px 0 0 80px;
+    font-size: 20px;
+  }
+  header h2 {
+    display: none;
+  }
+  header img {
+    position: static;
+    float: none;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+
+  /* スマートフォン・キャンペーンコンテンツ部分 */
+  .campaign {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .campaign img {
+    width: 300px;
+    margin-top: 50px;
+  }
+  .campaign-text p {
+    font-size: 15px;
+  }
+
+  /* スマートフォン・商品情報部分 */
+  .grocery {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .grocery img {
+    width: 300px;
+  }
+
+  /* スマートフォン・購入ボタン部分 */
+  .buy-button {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .button-size {
+    margin: 0;
+  }
+
+  /* スマートフォン・フッター部分 */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  footer {
+    margin: 0;
+    height: 140px;
+  }
+  footer img {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 98px;
+  }
+  footer p {
+    margin-top: 10px;
+    margin-left: 103px;
+    font-size: 15px;
+  }
+}
