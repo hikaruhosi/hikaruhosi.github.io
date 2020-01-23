@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+span {
+  color: red;
+}
+
+/* ヘッダー部分 */
+header {
+  height: 150px;
+  width: 100%;
+  background-color: green;
+  top: 0;
+}
+header a {
+  float: left;
+}
+header h1 {
+  float: left;
+  margin-top: 72px;
+  margin-left: 170px;
+  font-size: 25px;
+  font-weight: normal;
+  color: white;
+}
+header h2 {
+  float: left;
+  margin-top: 72px;
+  margin-left: 30px;
+  font-size: 25px;
+  color: red;
+}
+header img {
+  float: left;
+  margin: 48px -140px 0 90px;
+  width: 100px;
+}
+.top-link a:hover {
+  opacity: 0.8;
+}
+
+/* 購入画面部分 */
+.buy-contents p {
+  font-size: 20px;
+}
+.buy-img {
+  margin-left: 200px;
+}
+.buy-img img {
+  margin-top: 50px;
+}
+.price {
+  margin-top: -478px;
+  margin-left: 1000px;
+}
+.buy-button {
+  margin-top: -80px;
+  margin-left: 1050px;
+}
+.buy-button:hover {
+  opacity: 0.8;
+}
+
+/* フッター部分 */
+footer {
+  margin-top: 70px;
+  height: 180px;
+  background-color: green;
+}
+footer img {
+  width: 100px;
+  margin-top: 40px;
+  margin-left: 890px;
+}
+footer p {
+  color: white;
+  text-align: center;
+}
+
+/* タブレット用設定部分 */
+@media(max-width: 1170px) {
+  /* タブレット・ヘッダー部分 */
+  .header-contents {
+    width: 750px;
+    margin: 0 auto;
+  }
+  header {
+    height: 200px;
+  }
+  header h1 {
+    text-align: center;
+    float: none;
+    margin: 10px 0 0 0;
+    font-size: 30px;
+  }
+  header h2 {
+    display: none;
+  }
+  header img {
+    float: none;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 300px;
+  }
+
+  /* タブレット・購入画面部分 */
+  .buy-contents {
+    width: 750px;
+    margin: 0 auto;
+  }
+  .buy-contents p {
+    font-size: 20px;
+  }
+  input {
+    margin-bottom: 30px;
+    width: 170px;
+    height: 30px;
+  }
+  .buy-img {
+    margin: 80px 0 0 0px;
+  }
+  .buy-img img {
+    margin-top: 5px;
+    width: 750px;
+  }
+  .price {
+    margin-top: 40px;
+    margin-left: 90px;
+  }
+  .price h1 {
+    text-align: left;
+    font-size: 30px;
+  }
+  .buy-form h1 {
+    margin-top: 60px;
+  }
+  .buy-button {
+    text-align: center;
+    margin: -10px 0 0 0px;
+  }
+
+  /* タブレット・フッター部分 */
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 200px;
+  }
+  footer img {
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 300px;
+  }
+  footer p {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+}
+
+/* スマートフォン用設定部分 */
+@media(max-width: 670px) {
+  /* スマートフォン・ヘッダー部分 */
+  .header-contents {
+    width: 300px;
+    margin: 0 auto;
+  }
+  header {
+    height: 120px;
+  }
+  header h1 {
+    text-align: center;
+    float: none;
+    margin: 10px 0 0 0;
+    font-size: 25px;
+  }
+  header h2 {
+    display: none;
+  }
+  header img {
+    float: none;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+
+  /* スマートフォン・購入画面部分 */
+  .buy-contents {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .buy-contents p {
+    font-size: 15px;
+  }
+  input {
+    margin-bottom: 30px;
+    width: 125px;
+  }
+  .buy-img {
+    margin: 80px 0 0 0;
+  }
+  .buy-img img {
+    margin-top: 5px;
+    width: 300px;
+  }
+  .price {
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+  .price h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  /* スマートフォン・フッター部分 */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 140px;
+  }
+  footer img {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 98px;
+  }
+  footer p {
+    font-size: 15px;
+  }
+}

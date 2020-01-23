@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charaset="utf-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1">
+    <title>ベジドット公式サイト┃商品情報/ピーマン</title>
+    <link rel="stylesheet" href="../buy-css/buy.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap');
+    </style>
+  </head>
+
+  <body>
+
+    <!-- ヘッダー部分 -->
+    <header>
+      <div class="header-contents">
+        <img src="../../photo/vegedot.png" class="header-logo" alt="企業のイメージロゴです">
+        <h1>ピーマン</h1>
+        <div class="top-link">
+          <a href="../grocery.html">
+            <h2>戻る</h2>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 購入画面 -->
+    <div class="buy-contents">
+      <div class="buy-img">
+        <img src="../../photo/piman.png">
+      </div>
+      <div class="price">
+        <form oninput="vop.value = Number(a.value) * Number(b.value);">
+          <h1>値段計算機</h1>
+          <p>欲しい個数を入力↓　<span>変えないで下さい↓</span></p><input type="number" name="a" value="1" size="10"> ×
+          <input type="number" name="b" value="30" size="10"> ＝　値段が表示されます　￥
+          <output name="vop"></output>
+        </form>
+      <div class="buy-form">
+        <h1>購入数</h1>
+        <p>下に購入したい数を入力してください</p>
+          <form>
+            <input type="number" name="buy" value="0" >　コ
+          </form>
+          <p>入力したら購入ボタンを押してください</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 購入ボタン -->
+    <div class="buy-button">
+      <a href="../thanks/thanks.html">
+        <img src="../../photo/kounixyuu3.png" class="button-size" >
+      </a>
+    </div>
+
+    <!-- フッター部分 -->
+    <footer>
+      <div class="container">
+        <a href="../../home-page.html">
+          <img src="../../photo/vegedot.png">
+        </a>
+        <p>2019.vegedot</p>
+      </div>
+    </footer>
+
+  </body>
+
+</html>

@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: green;
+}
+
+/* ヘッダー部分 */
+header {
+  height: 200px;
+  width: 100%;
+  background-color: green;
+  top: 0;
+}
+header a {
+  float: left;
+}
+header h1 {
+  float: left;
+  margin-top: 68px;
+  margin-left: 190px;
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+}
+header h2 {
+  margin-top: 79px;
+  margin-left: 40px;
+  font-size: 30px;
+  color: red;
+}
+header img {
+  float: left;
+  margin: 58px -140px 0 70px;
+  width: 100px;
+}
+.top-link a:hover {
+  opacity: 0.8;
+}
+
+/* メッセージ部分 */
+.thanks-text {
+  margin-top: 200px;
+  margin-bottom: 160px;
+  text-align: center;
+}
+.thanks-text h1 {
+  font-size: 50px;
+}
+.thanks-text p {
+  font-size: 20px;
+}
+
+/* フッター部分 */
+footer {
+  margin-top: 40px;
+  height: 180px;
+  background-color: green;
+}
+footer img {
+  width: 100px;
+  margin-top: 40px;
+  margin-left: 890px;
+}
+footer p {
+  text-align: center;
+  color: white;
+}
+
+/* タブレット用設定部分 */
+@media(max-width: 1170px) {
+  /* タブレット・ヘッダー部分 */
+  .header-contents {
+    width: 750px;
+    margin: 0 auto;
+  }
+  header {
+    height: 200px;
+  }
+  header h1 {
+    text-align: center;
+    float: none;
+    margin: 10px 0 0 0;
+    font-size: 30px;
+  }
+  header h2 {
+    display: none;
+  }
+  header img {
+    float: none;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 300px;
+  }
+
+  /* タブレット・メッセージ部分 */
+  .thanks-text {
+    width: 750px;
+    margin: 0 auto;
+  }
+  .thanks-text h1 {
+    margin-top: 35px;
+    font-size: 30px;
+  }
+  .thanks-text p {
+    font-size: 26px;
+  }
+
+  /* タブレット・フッター部分 */
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 200px;
+    margin-top: 50px;
+  }
+  footer img {
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 300px;
+  }
+  footer p {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+}
+
+/* スマートフォン用設定部分 */
+@media(max-width: 670px) {
+  /* スマートフォン・ヘッダー部分 */
+  .header-contents {
+    width: 300px;
+    margin: 0 auto;
+  }
+  header {
+    height: 120px;
+  }
+  header h1 {
+    text-align: center;
+    float: none;
+    margin: 10px 0 0 0;
+    font-size: 20px;
+  }
+  header h2 {
+    display: none;
+  }
+  header img {
+    float: none;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 100px;
+  }
+
+  /* スマートフォン・メッセージ部分 */
+  .thanks-text {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .thanks-text h1 {
+    margin-top: 35px;
+    font-size: 25px;
+  }
+  .thanks-text p {
+    font-size: 16px;
+  }
+
+  /* スマートフォン・フッター部分 */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 140px;
+    margin-top: 40px;
+  }
+  footer img {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 98px;
+  }
+  footer p {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
