@@ -1,0 +1,312 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: green;
+}
+
+/* ヘッダー部分 */
+header {
+  height: 200px;
+  width: 100%;
+  background-color: green;
+  top: 0;
+}
+header a {
+  float: left;
+}
+header a:hover {
+  opacity: 0.8;
+}
+header p {
+  margin-top: 35px;
+  margin-left: 93px;
+  color: green;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+}
+header h1 {
+  margin-top: 68px;
+  margin-left: 190px;
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+  float: left;
+}
+header h2 {
+  margin-top: 68px;
+  margin-left: 40px;
+  font-size: 50px;
+  color: red;
+}
+header img {
+  margin: 58px 30px 0 70px;
+  width: 100px;
+  position: fixed;
+  z-index: 10;
+}
+
+/* 左側のイメージ */
+.trivia-left {
+  float: left;
+}
+.trivia-left img {
+  width: 540px;
+}
+
+/* 右側のイメージ */
+.trivia-right {
+  float: right;
+}
+.trivia-right img {
+  margin-top: 250px;
+  width: 530px;
+}
+
+/* メインイメージ */
+.trivia-center img {
+  width: 810px;
+  border-radius: 10px;
+}
+.trivia-center h1 {
+  text-align: center;
+}
+
+/* 各コンテンツ部分 */
+.trivia-img img {
+  border-radius: 10px;
+}
+.trivia-img {
+  margin-top: 80px;
+  float: left;
+  width: 33%;
+}
+.trivia-img a:hover {
+  color: red;
+  opacity: 0.8;
+}
+.trivia-contents {
+  margin-top: 80px;
+  margin-left: 100px;
+}
+.trivia-text {
+  padding-right: 5px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  background-color: yellow;
+}
+
+/* フッター部分 */
+.container {
+  text-align: center;
+}
+footer {
+  margin-top: 1200px;
+  height: 180px;
+  background-color: green;
+}
+footer img {
+  width: 100px;
+  margin-top: 20px;
+}
+footer p {
+  color: white;
+}
+
+/* タブレット用設定部分 */
+@media(max-width: 1170px) {
+  
+  /* タブレット・ヘッダー部分 */
+  .header-contents {
+    width: 750px;
+    margin: 0 auto;
+  }
+  header {
+    height: 200px;
+    width: 100%;
+  }
+  header img {
+    position: static;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 300px;
+  }
+  header h1{
+    margin-top: 140px;
+    margin-left: -195px;
+    font-size: 40px;
+  }
+  header h2 {
+    display: none;
+  }
+  .back-btn {
+    display: none;
+  }
+
+  /* タブレット・左側イメージ */
+  .trivia-left img {
+    display: none;
+  }
+
+  /* タブレット・右側イメージ */
+  .trivia-right img {
+    display: none;
+  }
+
+  /* タブレット・メインイメージ */
+  .trivia-center {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .trivia-center img {
+    width: 700px;
+  }
+  .trivia-center h1 {
+    font-size: 30px;
+  }
+
+  /* タブレット・各コンテンツ部分 */
+  .trivia-contents {
+    width: 745px;
+    margin: 0 auto;
+  }
+  .trivia-img {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+  }
+  .trivia-img img {
+    width: 650px;
+  }
+  .trivia-text p {
+    float: none;
+    width: 100%;
+    font-size: 30px;
+  }
+  .trivia-text br {
+    display: none;
+  }
+
+  /* タブレット・フッター部分 */
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 200px;
+    width: 100%;
+    margin-top: 100px;
+  }
+  footer img {
+    width: 150px;
+    margin-left: 0;
+  }
+  footer p {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+}
+
+/* スマートフォン用設定部分 */
+@media(max-width: 670px) {
+  /* スマートフォン・ヘッダー部分 */
+  .header-contents {
+    width: 300px;
+    margin: 0 auto;
+  }
+  header {
+    height: 120px;
+    width: 100%;
+  }
+  header a {
+    width: 300px;
+  }
+  header img {
+    position: static;
+    width: 100px;
+    margin-top: 12px;
+    margin-left: 100px;
+  }
+  header h1{
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 105px;
+    font-size: 20px;
+  }
+  header h2 {
+    display: none;
+  }
+  .back-btn {
+    display: none;
+  }
+
+  /* スマートフォン・左側イメージ */
+  .trivia-left img {
+    display: none;
+  }
+
+  /* スマートフォン・右側イメージ */
+  .trivia-right img {
+    display: none;
+  }
+
+  /* スマートフォン・メインイメージ */
+  .trivia-center {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .trivia-center img {
+    width: 300px;
+  }
+  .trivia-center h1 {
+    font-size: 15px;
+  }
+
+  /* スマートフォン・各コンテンツ部分 */
+  .trivia-contents {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .trivia-img {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .trivia-img img {
+    width: 250px;
+  }
+  .trivia-text p {
+    float: none;
+    width: 100%;
+    font-size: 14px;
+  }
+  .trivia-text br {
+    display: none;
+  }
+
+  /* スマートフォン・フッター部分 */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  footer {
+    margin-top: 50px;
+    height: 140px;
+  }
+  footer img {
+    width: 100px;
+  }
+  footer p {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}

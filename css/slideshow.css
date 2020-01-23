@@ -1,0 +1,53 @@
+
+/* スライドショー部分 */
+.slideshow {
+  width: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
+.center {
+  margin: 100px 10px 0 10px;
+  text-align: center;
+}
+.center img {
+  display: block;
+  width: 100%;
+  height: 550px;
+}
+.center img:hover {
+  opacity: 0.5;
+}
+.center .slick-next {
+  right: 20px; z-index: 99;
+}
+.center .slick-prev {
+  left: 15px; z-index: 100;
+}
+
+/* タブレット・スライドショー部分 */
+@media(max-width: 1170px) {
+  .slideshow {
+    text-align: center;
+    width: 750px;
+  }
+  .center {
+    margin-top: 30px;
+  }
+  .center img {
+    height: 330px;
+  }
+}
+
+/* スマートフォン・スライドショー部分 */
+@media(max-width: 670px) {
+  .slideshow {
+    text-align: center;
+    width: 320px;
+  }
+  .center {
+    margin-top: 5px;
+  }
+  .center img {
+    height: 135px;
+  }
+}

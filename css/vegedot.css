@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1500px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: green;
+}
+
+/* ヘッダー部分 */
+header {
+  height: 200px;
+  width: 100%;
+  background-color: green;
+  top: 0;
+}
+header a {
+  float: left;
+}
+header a:hover {
+  opacity: 0.8;
+}
+header p {
+  margin-top: 35px;
+  margin-left: 93px;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  color: green;
+}
+header h1 {
+  float: left;
+  margin-top: 68px;
+  margin-left: 190px;
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+}
+header h2 {
+  margin-top: 68px;
+  margin-left: 40px;
+  font-size: 50px;
+  color: red;
+}
+header img {
+  margin: 58px 30px 0 70px;
+  width: 100px;
+  position: fixed;
+  z-index: 10;
+}
+
+/* コーポレートスローガン・企業理念部分 */
+.main-container {
+  margin-top: 70px;
+  text-align: center;
+}
+.main p {
+  font-size: 20px;
+}
+.main-img {
+  width: 800px;
+  border-radius: 20px;
+}
+.main-size {
+  width: 200px;
+  border-radius: 20px;
+}
+
+/* 企業理念部分の間隔 */
+.domestic {
+  margin-top: 100px;
+}
+.price {
+  margin-top: 100px;
+}
+.fresh {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* フッター部分 */
+footer {
+  margin-top: 100px;
+  height: 180px;
+  background-color: green;
+}
+footer img {
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 690px;
+}
+footer p {
+  text-align: center;
+  color: white;
+}
+
+/* タブレット用設定部分 */
+@media(max-width: 1170px) {
+  /* タブレット・ヘッダー部分 */
+  .header-contents {
+    width: 750px;
+    margin: 0 auto;
+  }
+  header {
+    height: 200px;
+    width: 100%;
+  }
+  header img {
+    position: static;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 300px;
+  }
+  header h1{
+    margin-top: 140px;
+    margin-left: -255px;
+    font-size: 40px;
+  }
+  header h2 {
+    display: none;
+  }
+  .back-btn {
+    display: none;
+  }
+
+  /* タブレット・メインコンテンツ部分 */
+  .main {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .main-container {
+    margin-top: 100px;
+  }
+  .main-concept {
+    margin-top: 100px;
+  }
+  .main h1 {
+    font-size: 36px;
+  }
+  .main h2 {
+    font-size: 35px;
+  }
+  .main p {
+    font-size: 25px;
+  }
+  .main-img {
+    width: 700px;
+  }
+  .main-size {
+    width: 250px;
+  }
+  .main br {
+    display: none;
+  }
+  .domestic,.price,.fresh {
+    margin-top: 100px;
+  }
+  .domestic-text,.price-text,.fresh-text {
+    text-align: left;
+  }
+
+  /* タブレット・フッター部分 */
+  .container {
+    text-align: center;
+    width: 750px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 200px;
+    width: 100%;
+  }
+  footer img {
+    width: 150px;
+    margin-left: 0px;
+  }
+  footer p {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+}
+
+/* スマートフォン用設定部分 */
+@media(max-width: 670px) {
+  /* スマートフォン・ヘッダー部分 */
+  .header-contents {
+    width: 300px;
+    margin: 0 auto;
+  }
+  header {
+    height: 120px;
+    width: 100%;
+  }
+  header a {
+    width: 300px;
+  }
+  header img {
+    position: static;
+    width: 100px;
+    margin-top: 12px;
+    margin-left: 100px;
+  }
+  header h1{
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 75px;
+    font-size: 20px;
+  }
+  header h2 {
+    display: none;
+  }
+  .back-btn {
+    display: none;
+  }
+
+  /* スマートフォン・メインコンテンツ部分 */
+  .main {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .main-container {
+    margin-top: 30px;
+  }
+  .main-concept {
+    margin-top: 50px;
+  }
+  .main h1 {
+    font-size: 20px;
+  }
+  .main h2 {
+    font-size: 22px;
+  }
+  .main p {
+    font-size: 15px;
+  }
+  .main-img {
+    width: 300px;
+  }
+  .main-size {
+    width: 150px;
+  }
+  .main br {
+    display: none;
+  }
+  .domestic,.price,.fresh {
+    margin-top: 50px;
+  }
+  .domestic-text,.price-text,.fresh-text {
+    text-align: left;
+  }
+
+  /* スマートフォン・フッター部分 */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  footer {
+    height: 140px;
+  }
+  footer img {
+    width: 100px;
+  }
+  footer p {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,921 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+ul {
+  text-align: center;
+}
+li {
+  list-style: none;
+  font-size: 30px;
+}
+h1 {
+  color: green;
+}
+a {
+  text-decoration: none;
+  color: green;
+}
+
+/* ヘッダー部分 */
+header {
+  height: 200px;
+  width: 100%;
+  background-color: green;
+  top: 0;
+}
+header a {
+  float: left;
+}
+header a:hover {
+  opacity: 0.8;
+}
+header p {
+  margin: 35px 0 0 -50px;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  color: green;
+}
+header h1 {
+  float: left;
+  margin: 68px 0 0 50px;
+  font-size: 50px;
+  font-weight: normal;
+  color: white;
+}
+header h2 {
+  margin: 68px 0 0 20px;
+  font-size: 50px;
+  color: red;
+}
+header img {
+  margin: 58px 0 0 -74px;
+  width: 100px;
+  position: fixed;
+  z-index: 10;
+}
+
+/* ナビゲーションアイコン部分 */
+.grocery h1 {
+  margin-left: 54px;
+}
+.grocery-img {
+  float: left;
+  width: 16.6%;
+}
+.potatos {
+  display: none;
+  padding: 2px;
+  background-color: #efefef;
+  border-radius: 10px;
+}
+.mushrooms {
+  display: none;
+  padding: 2px;
+  background-color: #efefef;
+  border-radius: 10px;
+}
+.carrots {
+  display: none;
+  padding: 2px;
+  background-color: #efefef;
+  border-radius: 10px;
+}
+.onions {
+  display: none;
+  padding: 2px;
+  background-color: #efefef;
+  border-radius: 10px;
+}
+.tomatos {
+  display: none;
+  padding: 2px;
+  background-color: #efefef;
+  border-radius: 10px;
+}
+.fruits {
+  display: none;
+  padding: 2px;
+  background-color: #efefef;
+  border-radius: 10px;
+}
+.fruits-contents {
+  margin-top: -18px;
+}
+
+/* アイコンにマウス置いた時に表示される部分 */
+.grocery-img:hover {
+  opacity: 0.8;
+}
+/* grocery.jsでコンテンツを表示するために使用 */
+.a-active {
+  display: block;
+}
+.link-1:hover {
+  background-color: red;
+}
+.link-2:hover {
+  background-color: red;
+}
+.link-3:hover {
+  background-color: red;
+}
+.link-4:hover {
+  background-color: red;
+}
+.link-5:hover {
+  background-color: red;
+}
+.link-6:hover {
+  background-color: red;
+}
+.link-7:hover {
+  background-color: red;
+}
+.link-8:hover {
+  background-color: red;
+}
+.link-9:hover {
+  background-color: red;
+}
+.link-10:hover {
+  background-color: red;
+}
+
+/* ランキングコンテンツ部分 */
+.ranking {
+  height: 430px;
+  margin-top: 590px;
+  padding-left: 120px;
+  background-color: #ea5532;
+}
+.ranking h1 {
+  padding-top: 30px;
+  display: block;
+  color: white;
+}
+.rank-img {
+  float: left;
+  margin: 10px 30px 0 0;
+  text-align: center;
+}
+.ranking img {
+  border-radius: 10px;
+}
+.rank-img:hover {
+  box-shadow: 0 0 0 10px yellow;
+  border-radius: 10px;
+}
+.rank-size {
+  width: 450px;
+}
+
+/* 商品欄部分 */
+/* いも類 商品欄 */
+.potato {
+  float: left;
+  width: 100%;
+  height: 350px;
+  padding: 5px 75px 0 190px;
+  background-color: #f7c09a;
+}
+.potato img {
+  border-radius: 10px;
+}
+.potato-img {
+  float: left;
+  width: 19%;
+  margin-right: 10px;
+  padding: 3px;
+}
+.potato-img:hover {
+  box-shadow: 0 0 0 5px green;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+.potato-size {
+  width: 295px;
+}
+
+/* キノコ類 商品欄 */
+.mushroom {
+  float: left;
+  width: 100%;
+  height: 350px;
+  padding: 5px 75px 0 190px;
+  background-color: #f29e6b;
+}
+.mushroom img {
+  border-radius: 10px;
+}
+.mushroom-img {
+  float:left;
+  width: 19%;
+  margin-right: 10px;
+  padding: 3px;
+}
+.mushroom-img:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0 5px green;
+  border-radius: 10px;
+}
+.mushroom-size {
+  width: 295px;
+}
+
+/* 根菜類 商品欄 */
+.carrot {
+  float: left;
+  width: 100%;
+  height: 350px;
+  padding: 5px 75px 0 190px;
+  background-color: #f7c09a;
+}
+.carrot img {
+  border-radius: 10px;
+}
+.carrot-img {
+  float:left;
+  width: 19%;
+  margin-right: 15px;
+  padding: 3px;
+  border-radius: 10px;
+}
+.carrot-img:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0 5px green;
+  border-radius: 10px;
+}
+.carrot-size {
+  width: 295px;
+}
+
+/* 葉菜類 1段目 商品欄 */
+.onion-1 {
+  float: left;
+  width: 100%;
+  height: 350px;
+  padding: 5px 75px 0 190px;
+  background-color: #f29e6b;
+}
+.onion-1 img {
+  border-radius: 10px;
+}
+.onion-img-1 {
+  float:left;
+  width: 19%;
+  margin-right: 15px;
+  padding: 3px;
+  border-radius: 10px;
+}
+.onion-img-1:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0 5px green;
+  border-radius: 10px;
+}
+/* 葉菜類 2段目 商品欄 */
+.onion-2 {
+  float: left;
+  width: 100%;
+  height: 350px;
+  padding: 5px 75px 0 190px;
+  background-color: #f29e6b;
+}
+.onion-2 img {
+  border-radius: 10px;
+}
+.onion-img-2 {
+  float:left;
+  width: 19%;
+  margin-right: 15px;
+  padding: 3px;
+  border-radius: 10px;
+}
+.onion-img-2:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0 5px green;
+  border-radius: 10px;
+}
+.onion-size {
+  width: 295px;
+}
+
+/* 果菜類 1段目 商品欄 */
+.tomato {
+  float: left;
+  width: 100%;
+  height: 350px;
+  padding: 5px 75px 0 190px;
+  background-color: #f7c09a;
+}
+.tomato img {
+  border-radius: 10px;
+}
+.tomato-img {
+  float:left;
+  width: 18%;
+  margin-right: 15px;
+  padding: 3px;
+  border-radius: 10px;
+}
+.tomato-img:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0 5px green;
+  border-radius: 10px;
+}
+/* 果菜類 2段目 商品欄 */
+.tomato-2 {
+  float: left;
+  width: 100%;
+  height: 350px;
+  padding: 5px 75px 0 190px;
+  background-color: #f7c09a;
+}
+.tomato-2 img {
+  border-radius: 10px;
+}
+.tomato-img-2 {
+  float:left;
+  width: 19%;
+  margin-right: 15px;
+  padding: 3px;
+  border-radius: 10px;
+}
+.tomato-img-2:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0 5px green;
+  border-radius: 10px;
+}
+.tomato-size {
+  width: 295px;
+}
+
+/* 果物類 1段目 商品欄 */
+.fruit {
+  float: left;
+  width: 100%;
+  height: 350px;
+  padding: 5px 75px 0 190px;
+  background-color: #9ed8f5;
+}
+.fruit img {
+  border-radius: 10px;
+}
+.fruit-img {
+  float:left;
+  width: 19%;
+  margin-right: 15px;
+  padding: 3px;
+  border-radius: 10px;
+}
+.fruit-img:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0 5px green;
+  border-radius: 10px;
+}
+/* 果物類 2段目 商品欄 */
+.fruit-2 {
+  float: left;
+  width: 100%;
+  height: 350px;
+  padding: 5px 75px 0 190px;
+  background-color: #9ed8f5;
+}
+.fruit-2 img {
+  border-radius: 10px;
+}
+.fruit-img-2 {
+  float:left;
+  width: 19%;
+  margin-right: 15px;
+  padding: 3px;
+  border-radius: 10px;
+}
+.fruit-img-2:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0 5px green;
+  border-radius: 10px;
+}
+.fruit-size {
+  width: 295px;
+}
+
+/* フッター部分 */
+footer {
+  height: 180px;
+}
+footer .container {
+  background-color: green;
+  width: 100%;
+}
+footer p {
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+}
+footer img {
+  width: 100px;
+  margin: 20px 0 0 890px;
+}
+
+/* タブレット用設定部分 */
+@media(max-width: 1170px) {
+  /* タブレット・ヘッダー部分 */
+  .container {
+    width: 750px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  header {
+    height: 200px;
+    width: 100%;
+  }
+  header img {
+    position: static;
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  header a {
+    float: none;
+  }
+  header h1{
+    float: none;
+    margin-top: 15px;
+    margin-left: 0;
+    font-size: 40px;
+  }
+  header h2 {
+    display: none;
+  }
+  .back-btn {
+    display: none;
+  }
+
+  /* タブレット・商品ナビゲーション部分 */
+  .grocery {
+    height: 500px;
+  }
+  .grocery h1 {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 45px;
+  }
+  .grocery-img {
+    width: 50%;
+  }
+  .grocery-img img {
+    width: 240px;
+  }
+  .grocery-img li {
+    font-size: 35px;
+    margin-left: -40px;
+  }
+  .vegetable {
+    display: none;
+  }
+
+  /* タブレット・ランキングコンテンツ部分 */
+  .ranking {
+    height: 1250px;
+    padding-left: 0;
+  }
+  .ranking h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .rank-img {
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+  .rank-img:hover {
+    box-shadow: none;
+  }
+  .rank-size {
+    width: 450px;
+  }
+
+  /* タブレット・商品欄部分 */
+  /* タブレット・いも類 商品欄 */
+  .potato {
+    height: 650px;
+    padding: 0px;
+  }
+  .potato-img {
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .potato h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .potato-size {
+    width: 300px;
+  }
+  .potato-img:hover {
+    box-shadow: none;
+  }
+
+  /* タブレット・キノコ類 商品欄 */
+  .mushroom {
+    height: 900px;
+    padding: 0px;
+  }
+  .mushroom-img {
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .mushroom h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .mushroom-size {
+    width: 300px;
+  }
+  .mushroom-img:hover {
+    box-shadow: none;
+  }
+
+  /* タブレット・根菜類 商品欄 */
+  .carrot {
+    height: 900px;
+    padding: 0px;
+  }
+  .carrot-img {
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .carrot h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .carrot-size {
+    width: 300px;
+  }
+  .carrot-img:hover {
+    box-shadow: none;
+  }
+
+  /* タブレット・葉菜類 商品欄 */
+  .onion-1 {
+    height: 900px;
+    padding: 0px;
+  }
+  .onion-2 {
+    height: 790px;
+    padding: 0px;
+    margin-top: -80px;
+  }
+  .onion-img-1,.onion-img-2 {
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .onion-1 h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .onion-size {
+    width: 300px;
+  }
+  .onion-img-1:hover {
+    box-shadow: none;
+  }
+  .onion-img-2:hover {
+    box-shadow: none;
+  }
+
+  /* タブレット・果菜類 商品欄 */
+  .tomato {
+    height: 900px;
+    padding: 0px;
+  }
+  .tomato-2 {
+    height: 320px;
+    margin-top: -80px;
+    padding: 0px;
+  }
+  .tomato-img,.tomato-img-2 {
+    width: 45%;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .tomato h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .tomato-size {
+    width: 300px;
+  }
+  .tomato-img:hover {
+    box-shadow: none;
+  }
+  .tomato-img-2:hover {
+    box-shadow: none;
+  }
+
+  /* タブレット・果物類 商品欄 */
+  .fruit {
+    height: 900px;
+    padding: 0px;
+  }
+  .fruit-2 {
+    height: 540px;
+    margin-top: -80px;
+    padding: 0px;
+  }
+  .fruit-img,.fruit-img-2 {
+    width: 45%;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .fruit h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  .fruit-size {
+    width: 300px;
+  }
+  .fruit-img:hover {
+    box-shadow: none;
+  }
+  .fruit-img-2:hover {
+    box-shadow: none;
+  }
+
+  /* タブレット・フッター部分 */
+  footer {
+    height: 200px;
+    width: 100%;
+  }
+  footer img {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  footer p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+/* スマートフォン用設定部分 */
+@media(max-width: 670px) {
+
+  /* スマートフォン・ヘッダー部分 */
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  header {
+    height: 120px;
+    width: 100%;
+  }
+  header a {
+    width: 300px;
+  }
+  header img {
+    position: static;
+    width: 100px;
+    margin-top: 12px;
+    margin-left: 0;
+  }
+  header h1{
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 0;
+    font-size: 20px;
+  }
+  header h2 {
+    display: none;
+  }
+  .back-btn {
+    display: none;
+  }
+
+  /* スマートフォン・商品ナビゲーション部分 */
+  .grocery {
+    height: 50px;
+  }
+  .grocery h1 {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 25px;
+  }
+  .grocery-img {
+    width: 50%;
+  }
+  .grocery-img img {
+    width: 120px;
+  }
+  .grocery-img li {
+    font-size: 20px;
+    margin-left: -40px;
+  }
+  .vegetable {
+    display: none;
+  }
+
+  /* スマートフォン・ランキングコンテンツ部分 */
+  .ranking {
+    height: 780px;
+    padding-left: 0;
+  }
+  .ranking h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .rank-img {
+    margin-left: 20px;
+  }
+  .rank-img:hover {
+    box-shadow: none;
+  }
+  .rank-size {
+    width: 250px;
+  }
+
+  /* スマートフォン・商品欄部分 */
+  /* スマートフォン・いも類 商品欄 */
+  .potato {
+    height: 900px;
+    padding: 0px;
+  }
+  .potato-img {
+    float: none;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+  .potato h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .potato-size {
+    width: 250px;
+  }
+  .potato-img:hover {
+    box-shadow: none;
+  }
+
+  /* スマートフォン・キノコ類 商品欄 */
+  .mushroom {
+    height: 1100px;
+    padding: 0px;
+  }
+  .mushroom-img {
+    float: none;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+  .mushroom h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .mushroom-size {
+    width: 250px;
+  }
+  .mushroom-img:hover {
+    box-shadow: none;
+  }
+
+  /* スマートフォン・根菜類 商品欄 */
+  .carrot {
+    height: 1100px;
+    padding: 0px;
+  }
+  .carrot-img {
+    float: none;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+  .carrot h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .carrot-size {
+    width: 250px;
+  }
+  .carrot-img:hover {
+    box-shadow: none;
+  }
+
+  /* スマートフォン・葉菜類 商品欄 */
+  .onion-1 {
+    height: 1100px;
+    padding: 0px;
+  }
+  .onion-2 {
+    height: 1050px;
+    padding: 0px;
+    margin-top: -80px;
+  }
+  .onion-img-1,.onion-img-2 {
+    float: none;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+  .onion-1 h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .onion-size {
+    width: 250px;
+  }
+  .onion-img-1:hover {
+    box-shadow: none;
+  }
+  .onion-img-2:hover {
+    box-shadow: none;
+  }
+
+  /* スマートフォン・果菜類 商品欄 */
+  .tomato {
+    height: 1100px;
+    padding: 0px;
+  }
+  .tomato-2 {
+    height: 450px;
+    margin-top: -80px;
+    padding: 0px;
+  }
+  .tomato-img,.tomato-img-2 {
+    float: none;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+  .tomato h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .tomato-size {
+    width: 250px;
+  }
+  .tomato-img:hover {
+    box-shadow: none;
+  }
+  .tomato-img-2:hover {
+    box-shadow: none;
+  }
+
+  /* スマートフォン・果物類 商品欄 */
+  .fruit {
+    height: 1100px;
+    padding: 0px;
+  }
+  .fruit-2 {
+    height: 650px;
+    margin-top: -80px;
+    padding: 0px;
+  }
+  .fruit-img,.fruit-img-2 {
+    float: none;
+    margin-top: 20px;
+    margin-left: 22px;
+  }
+  .fruit h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .fruit-size {
+    width: 250px;
+  }
+  .fruit-img:hover {
+    box-shadow: none;
+  }
+  .fruit-img-2:hover {
+    box-shadow: none;
+  }
+
+  /* スマートフォン・フッター部分 */
+  footer {
+    height: 140px;
+    width: 100%;
+  }
+  footer img {
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .footer-logo {
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
