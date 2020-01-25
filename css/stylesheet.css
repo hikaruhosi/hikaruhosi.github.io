@@ -64,6 +64,7 @@ header p {
   background-color: #ea5532;
 }
 .ranking h1 {
+  text-align: left;
   color: white;
 }
 .ranking p {
@@ -93,6 +94,7 @@ header p {
   background-color: #fdf58f;
 }
 .campaign h1,p {
+  text-align: left;
   color: red;
 }
 .campaign p {
